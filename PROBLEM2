@@ -1,0 +1,11 @@
+print("Problem 2-PANDAS")
+import pandas as pd
+cars=pd.read_csv("cars.csv")
+print(" a.)First 5 rows with odd-numbered columns")
+a=cars.iloc[[0,1,2,3,4],[0,2,4,6,8,10]]
+print(" b.)Row that contains Model of Mazda RX4")
+b=cars[:1]
+print("c.)How many cylinders does Camaro Z28 have?")
+c=cars.loc[[23],["Model","cyl"]]
+print("d.)How many cylinders and what gear type does: Mazda RX4 Wag, Ford Pantera L and Honda Civic have?")
+d=cars.loc[[1,28,18],["Model","cyl","gear"]]
